@@ -15,7 +15,7 @@ def create_app():
         app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///pocketgan.db"
         app.debug = True
     else:
-        app.config['DATABASE_URI'] = os.environ.get('DATABASE_URL')
+        app.config['DATABASE_URL'] = os.environ.get('DATABASE_URL')
         app.debug = False
     db.init_app(app)
     
