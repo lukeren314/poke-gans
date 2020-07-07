@@ -1,0 +1,41 @@
+.menu-bar {
+  display: block;
+  height: 8vmin;
+  background-color: rgb(92, 203, 255);
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
+  margin: 0;
+}
+.header-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8vmin;
+  pointer-events: none;
+}
+
+.account {
+  position: absolute;
+  top: 2.25vmin;
+  right: 1vmin;
+
+  border: 2px;
+  z-index: 9;
+}
+.username {
+  float: left;
+  margin-top: 0vmin;
+  margin-bottom: 0;
+  margin-right: 2vmin;
+  font-size: 2.5vmin;
+}
+
+.logout-button {
+  display: inline-block;
+  font-size: 2vmin;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(4, 121, 255);
+  padding: 0.5vmin 1vmin 0.5vmin 1vmin;
+  border-radius: 6px;
+}

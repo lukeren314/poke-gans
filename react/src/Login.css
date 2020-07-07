@@ -1,0 +1,33 @@
+.login-container {
+  margin: auto;
+  margin-top: 10vmin;
+  display: block;
+  width: 40vmin;
+  padding: 10vmin 5vmin 25vmin 5vmin;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-bottom {
+  height: 5vh;
+}
+.save-username {
+  float: right;
+  margin-top: 1vmin;
+  font-size: 2vmin;
+}
+.save-username {
+  cursor: pointer;
+}
+.submit-button {
+  float: left;
+  top: 1vmin;
+  color: #1db4fa;
+}
+.form {
+  padding: 0px;
+}
+.extra-links {
+  margin-top: 2vh;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #069;
+}

@@ -1,0 +1,82 @@
+.home-left {
+  float: left;
+  height: 80vh;
+  width: 48vw;
+}
+.home-right {
+  margin-left: 2vw;
+  display: inline-block;
+  height: 80vh;
+  width: 45vw;
+  /* background-color: rgba(82, 82, 82, 0.253); */
+}
+.user-codes-title {
+  margin-top: 0;
+  margin-bottom: 1vmin;
+}
+.user-codes {
+  width: 80%;
+  height: 10vh;
+}
+.codes-form {
+  margin-left: 1vw;
+  background-color: rgba(131, 131, 131, 0.445);
+
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 3vmin;
+}
+.enter-codes-form {
+  margin-top: 5vmin;
+}
+.enter-codes {
+  font-size: 4vmin;
+}
+
+.enter-codes-input {
+  width: 80%;
+}
+
+.codes-log {
+  margin-top: 5vmin;
+}
+.codes-log-title {
+  font-size: 3vmin;
+}
+.codes-log-text {
+  margin-top: 1vmin;
+  width: 80%;
+  height: 20vh;
+}
+
+.daily-monster {
+  width: 45vw;
+  height: 75vmin;
+  background-color: skyblue;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0;
+}
+.daily-monster-title {
+  width: 100%;
+  text-align: center;
+  font-size: 5vmin;
+}
+.daily-monster-image {
+  margin-top: 1vmin;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.daily-monster-info {
+  width: 100%;
+  text-align: center;
+  font-size: 4vmin;
+}
+
+.daily-monster-info p {
+  margin-top: 1vmin;
+  margin-bottom: 0;
+}

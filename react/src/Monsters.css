@@ -1,0 +1,70 @@
+.menu-button {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 3px solid black;
+  border-bottom-right-radius: 6px;
+  background-color: rgba(17, 114, 226, 0.788);
+  color: white;
+  font-size: 4vmin;
+  cursor: pointer;
+}
+.close-menu {
+  position: absolute;
+  top: 2vmin;
+  left: 85%;
+  border: 3px solid black;
+  border-bottom-right-radius: 6px;
+  background-color: rgba(255, 8, 8, 0.788);
+  color: white;
+  font-size: 4vmin;
+  cursor: pointer;
+}
+#menu {
+  position: absolute;
+  display: block;
+  top: 0;
+  height: calc(100vh-63px);
+  width: 100%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  z-index: 9;
+}
+
+#menu.show-menu {
+  overflow-x: hidden;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.menu-container {
+  margin-top: 2vmin;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 85vh;
+  padding: 3vmin;
+  border: 3px solid black;
+  border-radius: 16px;
+  background-color: rgba(223, 223, 223, 0.925);
+}
+.monsters-container {
+  margin-top: 4vmin;
+  display: grid;
+  grid-gap: 3vmin;
+  grid-template-columns: repeat(auto-fill, minmax(10vmin, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(10vmin, 1fr));
+  overflow-x: hidden;
+  overflow-x: auto;
+}
+
+.monsters-collected {
+  position: absolute;
+  top: 3vmin;
+  left: 10vw;
+  font-size: 2.5vmin;
+}

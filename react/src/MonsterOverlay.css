@@ -1,0 +1,52 @@
+.monster-overlay {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 90vh;
+  z-index: 11;
+  /* width: auto;
+  height: auto;
+  top: 5vmin;
+  bottom: 13vmin;
+  left: 5vmin;
+  right: 5vmin; */
+}
+.overlay-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85vw;
+  height: 75vh;
+  background-color: rgb(182, 182, 182);
+  z-index: 11;
+  border: 5px solid black;
+  border-radius: 16px;
+  padding: 3vmin;
+  overflow-x: hidden;
+  overflow-x: auto;
+}
+.overlay-image {
+  margin-top: 5vmin;
+  display: block;
+  height: 50vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay-close-button {
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  font-size: 2vmin;
+}
+.overlay-info {
+  /* float: right; */
+  /* display: inline-block; */
+  width: 100%;
+  text-align: center;
+  font-size: 4vmin;
+  font-weight: bold;
+  margin-top: 2vmin;
+  /* margin-left: 5vmin; */
+  /* margin-top: 5vmin; */
+  /* margin-right: 15vmin; */
+}
