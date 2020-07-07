@@ -27,4 +27,4 @@ def create_app():
         db.create_all()
 
 
-        app.run()
+        # app.run()
