@@ -1,6 +1,6 @@
 import time
 import os
-import cv2
+# import cv2
 import tensorflow as tf
 import numpy as np
 # import matplotlib.pyplot as plt
@@ -35,7 +35,7 @@ class Sampler:
         prediction = self._generator(noise, training=False)
         image_tensor = prediction[0, :, :, :] * 127.5 + 127.5
         image_array = np.array(image_tensor).astype('uint8')
-        image_array = cv2.fastNlMeansDenoisingColored(image_array)
+        # image_array = cv2.fastNlMeansDenoisingColored(image_array)
         image = Image.fromarray(image_array).convert('RGBA')
         if clean:
             image = self._remove_background(image, threshold)
