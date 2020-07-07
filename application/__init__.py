@@ -3,7 +3,7 @@ from .models import User
 from .extensions import db
 import os
 
-DEV = True
+DEV = False
 
 def create_app():
         
