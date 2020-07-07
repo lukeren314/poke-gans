@@ -12,7 +12,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/lukeren314/pocket-gans
+            https://github.com/lukeren314/poke-gans
           </a>
         </p>
       </div>
