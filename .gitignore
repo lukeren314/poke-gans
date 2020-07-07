@@ -1,12 +1,4 @@
-node_modules
-build
-*.json
-*.png
-checkpoints
-checkpoints2
 __pycache__
 env
-*.lock
-*.ico
 *.db
 .vscode
