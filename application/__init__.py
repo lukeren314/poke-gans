@@ -7,8 +7,8 @@ DEV = False
 
 def create_app():
         
-    app = Flask(__name__, static_folder='../react/build/static',
-                template_folder='../react/build')
+    app = Flask(__name__, static_folder='../build/static',
+                template_folder='../build')
 
     app.config['SQLALCHEMY_TRACK_MODIFIATIONS'] = False
     if DEV:

@@ -30,27 +30,27 @@ def index():
 
 @app.route('/manifest.json')
 def manifest():
-    return send_from_directory('../react/build', 'manifest.json')
+    return send_from_directory('../build', 'manifest.json')
 
 @app.route('/logo192.png')
 def logo192():
-    return send_from_directory('../react/build', 'logo192.png')
+    return send_from_directory('../build', 'logo192.png')
 
 @app.route('/logo512.png')
 def logo512():
-    return send_from_directory('../react/build', 'logo512.png')
+    return send_from_directory('../build', 'logo512.png')
 
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory('../react/build', 'favicon.ico')
+    return send_from_directory('../build', 'favicon.ico')
 
 @app.route('/titlelogo.png')
 def titlelogo():
-    return send_from_directory('../react/build', 'titlelogo.png')
+    return send_from_directory('../build', 'titlelogo.png')
 
 @app.route('/loading.png')
 def loading():
-    return send_from_directory('../react/build', 'loading.png')
+    return send_from_directory('../build', 'loading.png')
 
 @app.route('/login')
 def login():
