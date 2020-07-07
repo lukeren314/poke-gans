@@ -1,5 +1,5 @@
 from .extensions import db, create_code, create_image, create_name
-from datetime import datetime, date
+from datetime import datetime
 
 class User(db.Model):
     __tablename__ = 'user'

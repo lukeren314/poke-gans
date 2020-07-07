@@ -3,16 +3,16 @@ from .models import User
 from .extensions import db
 import os
 
-DEV = False
+DEV = True
 
 def create_app():
         
     app = Flask(__name__, static_folder='../build/static',
                 template_folder='../build')
 
-    app.config['SQLALCHEMY_TRACK_MODIFIATIONS'] = False
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     if DEV:
-        app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
+        app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///pocketgan.db"
         app.debug = True
     else:
         app.config['DATABASE_URI'] = os.environ.get('DATABASE_URL')
