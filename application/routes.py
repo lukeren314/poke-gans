@@ -1,6 +1,9 @@
 from flask import render_template, request, send_from_directory, make_response, jsonify
 from flask import current_app as app
 from .models import db, Monster, User, MonsterInfo
+import click
+from flask.cli import with_appcontext
+
 
 from datetime import date
 from PIL import Image
@@ -53,6 +56,21 @@ def titlelogo():
 @app.route('/loading.png')
 def loading():
     return send_from_directory('../build', 'loading.png')
+
+@click.command(name='create_tables')
+@with_app_context
+def create_tables():
+    db.create_all()
+
+@click.command(name='create_monsters')
+@with_app_context
+def create():
+    new_monsters = []
+    for _ in range(50):
+        new_monster = MonsterInfo()
+        new_monsters.append(new_monster)
+        db.session.add(new_monster)
+    db.session.commit()
 
 @app.route('/login')
 def login():
@@ -146,24 +164,6 @@ def codes():
     db.session.commit()
     return _make_json_response({'user':_user_as_json(user), 'redeemed': redeemed, 'log':log})
 
-
-@app.route('/create')
-def create():
-    args = _get_request_args('num')
-    if None in args:
-        return _make_invalid_response('No num given')
-    num, = args
-    if not num.isdigit():
-        return _make_invalid_response(f'Invalid num')
-    num = int(num)
-    new_monsters = []
-    for _ in range(num):
-        new_monster = MonsterInfo()
-        new_monsters.append(new_monster)
-        db.session.add(new_monster)
-    db.session.commit()
-
-    return _make_json_response([_monster_info_as_json(monster) for monster in new_monsters])
 
 @app.route('/images/<monster_info_id>')
 def get_image(monster_info_id):
