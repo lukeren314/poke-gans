@@ -12,7 +12,7 @@ flask-sqlalchemy = "*"
 gunicorn = "*"
 tensorflow = "*"
 pillow = "*"
-opencv-python = "4.2.0.34"
+opencv-python = "==4.2.0.34"
 numpy = "*"
 
 [requires]
