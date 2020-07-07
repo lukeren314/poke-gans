@@ -2,7 +2,7 @@ from flask import render_template, request, send_from_directory, make_response, 
 from flask import current_app as app
 from .models import db, Monster, User, MonsterInfo
 import click
-from flask.cli import with_app_context
+from flask.cli import with_appcontext
 
 
 from datetime import date
@@ -58,12 +58,12 @@ def loading():
     return send_from_directory('../build', 'loading.png')
 
 @click.command(name='create_tables')
-@with_app_context
+@with_appcontext
 def create_tables():
     db.create_all()
 
 @click.command(name='create_monsters')
-@with_app_context
+@with_appcontext
 def create():
     new_monsters = []
     for _ in range(50):
