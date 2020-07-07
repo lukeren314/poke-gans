@@ -10,10 +10,11 @@ flask = "*"
 psycopg2 = "*"
 flask-sqlalchemy = "*"
 gunicorn = "*"
-tensorflow = "*"
+tensorflow = "==2.0.0b1"
 pillow = "*"
 opencv-python = "==4.2.0.34"
 numpy = "*"
+pip = "*"
 
 [requires]
 python_version = "3.7"
