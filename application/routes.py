@@ -2,7 +2,7 @@ from flask import render_template, request, send_from_directory, make_response, 
 from flask import current_app as app
 from .models import db, Monster, User, MonsterInfo
 import click
-from flask.cli import with_appcontext
+from flask.cli import with_app_context
 
 
 from datetime import date
