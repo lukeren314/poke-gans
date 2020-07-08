@@ -2,6 +2,8 @@ from flask_sqlalchemy import SQLAlchemy
 from . import dcgan, rnn
 import json
 import io
+import uuid
+
 DCGAN_CHECKPOINT_PATH = './application/checkpoints'
 RNN_CHECKPOINT_PATH = './application/checkpoints2'
 RNN_VOCAB_PATH = './application/vocab.json'

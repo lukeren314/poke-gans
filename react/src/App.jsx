@@ -187,7 +187,7 @@ export default class App extends React.Component {
         {this.state.loading ? (
           <div className="loading">
             <img
-              src={"/images/loading.png"}
+              src={process.env.PUBLIC_URL + "/loading.png"}
               className="loading-image"
               alt="loading"
             />
