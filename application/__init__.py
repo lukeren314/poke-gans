@@ -23,7 +23,7 @@ def create_app():
         
         from . import routes
 
-        db.drop_all()
+        # db.drop_all()
         db.create_all()
 
         return app
