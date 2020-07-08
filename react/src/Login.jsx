@@ -104,7 +104,7 @@ class Login extends React.Component {
                 // color="#1db4fa"
                 className="submit-button"
               >
-                Log In
+                {this.state.register ? "Register" : "Log In"}
               </Button>
               {!this.state.register ? (
                 <label className="save-username">
