@@ -3,6 +3,7 @@
 Welcome! This is the github page for my project, PocketGans.
 This project combines the front-end/back-end power of Flask and React with neural networks like DCGAN and GRU to allow users to collect and share digital monsters.
 
+This app is deployed on Heroku at the website: poke-gans.herokuapp.com
 If you want to contact me about this project, my email is: lukeren314@gmail.com
 
 ## Registering

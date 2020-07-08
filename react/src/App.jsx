@@ -88,6 +88,8 @@ export default class App extends React.Component {
     );
     if (json) {
       this.setUserInfo(json);
+      this.state.selectedMonsters.push(json.monsters[0]);
+      this.setState({ selectedMonsters: this.state.selectedMonsters });
     }
     this.stopLoading();
   }
