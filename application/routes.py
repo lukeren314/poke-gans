@@ -158,7 +158,7 @@ def codes():
         if not already_redeemed:
             log.append(f'Redeemed code: {monster_code} Obtained {monster_info.name}')
             new_monster = Monster(user, monster_info)
-            redeemed.append(new_monster)
+            redeemed.append(_monster_as_json(new_monster))
             db.session.add(new_monster)
 
     db.session.commit()
