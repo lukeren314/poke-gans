@@ -167,6 +167,8 @@ def codes():
 
 @app.route('/images/<monster_info_id>')
 def get_image(monster_info_id):
+    if monster_info_id == "loading.png":
+        return send_from_directory('../build', 'loading.png')
     if monster_info_id == None:
         return _make_error_response('No Monster Id')
     monster = MonsterInfo.query.get(monster_info_id)

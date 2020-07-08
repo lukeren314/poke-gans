@@ -188,7 +188,7 @@ export default class App extends React.Component {
         ) : null}
         {this.state.loading ? (
           <div className="loading">
-            <img src={"/loading.png"} className="loading-image" alt="loading" />
+            <img src="/loading.png" className="loading-image" alt="loading" />
           </div>
         ) : null}
         {this.state.selectedMonsters &&
